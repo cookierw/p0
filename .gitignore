@@ -11,7 +11,7 @@ logs
 /dist
 
 # Tooling files
-node_modules
+node_modules/
 
 # Temp directory
 /tmp
@@ -30,3 +30,6 @@ $RECYCLE.BIN/
 
 # Husky
 .husky
+
+src/SLDS
+package-lock.json

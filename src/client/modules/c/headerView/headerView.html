@@ -1,0 +1,59 @@
+<template>
+  <!-- Header container -->
+  <div class="slds-page-header">
+    <div class="slds-page-header__row">
+      <div class="slds-page-header__col-title">
+        <!-- User icon -->
+        <div class="user-icon slds-media">
+          <div class="slds-media__figure">
+            <span class="slds-icon_container slds-icon-standard-avatar" title="user">
+              <svg class="slds-icon slds-page-header__icon" aria-hidden="true">
+                <use xlink:href={userIcon}></use>
+              </svg>
+              <span class="slds-assistive-text">user</span>
+            </span>
+          </div>
+          <!-- Page title -->
+          <div class="slds-media__body">
+            <div class="slds-page-header__name">
+              <div class="slds-page-header__name-title">
+                <h1>
+                  <span class="slds-page-header__title slds-truncate" title="hungryForApples Store">hungryForApples Store</span>
+                </h1>
+              </div>
+            </div>
+            <!-- Navigation/Subtitle -->
+            <template if:true={isShowingNavigation}>
+              <div class="crumbs slds-page-header__name-meta">
+                &lt; <a onclick={handleNavigation} alt="Back">Items</a>
+              </div>
+            </template>
+            <template if:false={isShowingNavigation}>
+              <p class="slds-page-header__name-meta">Best apples around!</p>
+            </template>
+          </div>
+        </div>
+      </div>
+      <!-- Cart info -->
+      <div class="slds-page-header__col-actions">
+        <div class="slds-page-header__controls">
+          <div class="slds-page-header__control">
+            <div class="cart-info slds-grid">
+              <div class="slds-col">
+                <p class="slds-align_absolute-center">{cartCount} Items | Total: {cartTotal}</p>
+                <button class="slds-button slds-button_neutral" onclick={presentCart}>
+                  <span class="slds-icon_container slds-icon-utility-cart slds-current-color" title="Shopping cart">
+                    <svg class="slds-icon slds-icon_xx-small" aria-hidden="true">
+                      <use xlink:href="/SLDS/icons/utility-sprite/svg/symbols.svg#cart"></use>
+                    </svg>
+                    <span class="slds-assistive-text">cart</span>
+                  </span>&ensp;View Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
