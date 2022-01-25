@@ -7,7 +7,7 @@
 // https://github.com/trailheadapps/lwc-recipes-oss
 
 // import { createElement } from 'lwc';
-// import MyApp from 'my/app';
+// import MyApp from 'c/app';
 
 describe('c-app', () => {
     it("Dummy test", () => {
