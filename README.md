@@ -2,6 +2,8 @@
 
 Web-store with mock cart/checkout
 
+[GitHub Kanban Board](https://github.com/sean-rw/p0/projects/1)
+
 ## SDLC
 
 **Requirements**:
