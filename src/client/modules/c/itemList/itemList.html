@@ -24,7 +24,7 @@
         <div class="itemlist-body slds-card__body slds-card__body_inner slds-grid slds-wrap">
             <template for:each={items} for:item="item">
                 <div class="itemlist-item slds-col" key={item.id}>
-                    <c-item item={item}></c-item>
+                    <c-item onadd={addItemToCart} item={item}></c-item>
                 </div>
             </template>
         </div>

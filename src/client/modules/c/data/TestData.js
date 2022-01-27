@@ -8,7 +8,7 @@ function imageString() {
 
 export const items = [
     {
-        id: "00001",
+        id: 1,
         name: "Gravenstein Apple",
         image: imageString(),
         description: "Tart, crispy baking apple.",
@@ -17,7 +17,7 @@ export const items = [
         seller: "John Appleseed"
     },
     {
-        id: "00002",
+        id: 2,
         name: "Fuji Apple",
         image: imageString(),
         description: "Sweet, crispy snacking apple.",
@@ -26,7 +26,7 @@ export const items = [
         seller: "Grandma Smith"
     },
     {
-        id: "00003",
+        id: 3,
         name: "Pink Pearl Apple",
         image: imageString(),
         description: "Tart apple with bright pink flesh.",
@@ -35,7 +35,7 @@ export const items = [
         seller: "Belle McIntosh"
     },
     {
-        id: "00004",
+        id: 4,
         name: "Gravenstein Apple",
         image: imageString(),
         description: "Tart, crispy baking apple.",
@@ -44,7 +44,7 @@ export const items = [
         seller: "John Appleseed"
     },
     {
-        id: "00005",
+        id: 5,
         name: "Fuji Apple",
         image: imageString(),
         description: "Sweet, crispy snacking apple.",
@@ -53,7 +53,7 @@ export const items = [
         seller: "Grandma Smith"
     },
     {
-        id: "00006",
+        id: 6,
         name: "Pink Pearl Apple",
         image: imageString(),
         description: "Tart apple with bright pink flesh.",
