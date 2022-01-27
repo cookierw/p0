@@ -1,8 +1,9 @@
 import { LightningElement } from 'lwc';
+import { items as testItems } from "../data/TestData"
 
 export default class App extends LightningElement {
 
-    items = [];
+    items = testItems;
     cart = [];
     isShowingCart = false;
     userIcon = "/SLDS/icons/standard-sprite/svg/symbols.svg#avatar";

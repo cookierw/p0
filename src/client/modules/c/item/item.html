@@ -1,10 +1,38 @@
 <template>
     <article class="slds-card slds-m-around_small">
-        <div class="slds-card__body slds-card__body_inner">Anything can go into the card body</div>
-        <footer class="slds-card__footer">
-            <a class="slds-card__footer-action" href="#">View All
-                <span class="slds-assistive-text">Accounts</span>
-            </a>
-        </footer>
+        <!-- Card header -->
+        <div class="slds-card__header slds-grid">
+            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                <div class="slds-media__body">
+                    <h2 class="item-header slds-card__header-title">
+                        <!-- Item name -->
+                        <span>{item.name}</span>
+                    </h2>
+                </div>
+            </header>
+        </div>
+        <div class="slds-card__body slds-card__body_inner slds-grid">
+            <!-- Card Body -->
+            <div class="slds-col">
+                <div class="item-image slds-p-bottom_small">
+                    <img src={item.image} alt="Item image" />
+                </div>
+                <div class="item-info slds-p-bottom_small slds-grid slds-grid_align-space">
+                    <div class="item-price slds-col">
+                        <p>{item.price}</p>
+                    </div>
+                    <div class="item-rating slds-col">
+                        <p>{item.rating} Stars!</p>
+                    </div>
+                    <div class="item-seller slds-col slds-size_1-of-2">
+                        <p>{item.seller}</p>
+                    </div>
+                </div>
+                <div class="item-description">
+                    <p>Description:</p>
+                    <h2>{item.description}</h2>
+                </div>
+            </div>
+        </div>
     </article>
 </template>

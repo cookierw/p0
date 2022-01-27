@@ -20,7 +20,8 @@
                 </div>
             </header>
         </div>
-        <div class="slds-card__body slds-card__body_inner slds-grid slds-grid-wrap">
+        <!-- Items -->
+        <div class="item-list-body slds-card__body slds-card__body_inner slds-grid slds-grid-wrap">
             <template for:each={items} for:item="item">
                 <div class="slds-col" key={item.id}>
                     <c-item item={item}></c-item>
