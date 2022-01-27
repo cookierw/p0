@@ -21,9 +21,9 @@
             </header>
         </div>
         <!-- Items -->
-        <div class="item-list-body slds-card__body slds-card__body_inner slds-grid slds-grid-wrap">
+        <div class="itemlist-body slds-card__body slds-card__body_inner slds-grid slds-wrap">
             <template for:each={items} for:item="item">
-                <div class="slds-col" key={item.id}>
+                <div class="itemlist-item slds-col" key={item.id}>
                     <c-item item={item}></c-item>
                 </div>
             </template>
