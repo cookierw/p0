@@ -1,10 +1,10 @@
-import { LightningElement } from 'lwc';
+import { LightningElement, track } from 'lwc';
 import { items as testItems } from "../data/TestData"
 
 export default class App extends LightningElement {
 
     items = testItems;
-    cart = [];
+    @track cart = [];
     isShowingCart = false;
     userIcon = "/SLDS/icons/standard-sprite/svg/symbols.svg#avatar";
     
@@ -13,14 +13,12 @@ export default class App extends LightningElement {
         return this.cart.length; 
     }
     get cartTotal() { 
-        if (!this.cart.length === 0) {
-            return this.cart.reduce((prev, curr) => prev + curr); 
-        }
-        return 0;
+        return this.cart.length * 1;
     }
-    addItemToCart(item) { 
-        this.cart.push(item); 
+    addItemToCart(e) { 
+        this.cart.push(this.items[e.detail - 1]);
     }
+
     clearCart() { 
         this.cart = []; 
     }
