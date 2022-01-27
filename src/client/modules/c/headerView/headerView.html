@@ -29,7 +29,7 @@
               </div>
             </template>
             <template if:false={isShowingNavigation}>
-              <p class="slds-page-header__name-meta">Best apples around!</p>
+              <p class="subtitle slds-page-header__name-meta">Best apples around!</p>
             </template>
           </div>
         </div>
@@ -40,7 +40,7 @@
           <div class="slds-page-header__control">
             <div class="cart-info slds-grid">
               <div class="slds-col">
-                <p class="slds-align_absolute-center">{cartCount} Items | Total: {cartTotal}</p>
+                <p class="count-total slds-align_absolute-center">{cartCount} Items | Total: {cartTotal}</p>
                 <button class="slds-button slds-button_neutral" onclick={presentCart}>
                   <span class="slds-icon_container slds-icon-utility-cart slds-current-color" title="Shopping cart">
                     <svg class="slds-icon slds-icon_xx-small" aria-hidden="true">

@@ -1,11 +1,51 @@
-.item {
-    width: 30vw;
+@media (min-width: 576px) {
+    .item {
+        width: 40vw;
+    }
+    
+    h2 {
+        font-size: large;
+    }
+
+    p {
+        font-size: medium;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 }
 
-h2 {
-    font-size: large;
+@media (min-width: 768px) {
+    .item {
+        width: 40vw;
+    }
+    
+    h2 {
+        font-size: large;
+    }
+    
+    p {
+        font-size: medium;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 }
 
-p {
-    font-size: medium;
+@media (min-width: 992px) {
+    
+}
+
+@media (min-width: 1200px) {
+    .item {
+        width: 30vw;
+    }
+    
+    h2 {
+        font-size: large;
+    }
+    
+    p {
+        font-size: medium;
+    }
 }

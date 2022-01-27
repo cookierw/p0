@@ -35,7 +35,7 @@ export const items = [
         seller: "Belle McIntosh"
     },
     {
-        id: "00001",
+        id: "00004",
         name: "Gravenstein Apple",
         image: imageString(),
         description: "Tart, crispy baking apple.",
@@ -44,7 +44,7 @@ export const items = [
         seller: "John Appleseed"
     },
     {
-        id: "00002",
+        id: "00005",
         name: "Fuji Apple",
         image: imageString(),
         description: "Sweet, crispy snacking apple.",
@@ -53,7 +53,7 @@ export const items = [
         seller: "Grandma Smith"
     },
     {
-        id: "00003",
+        id: "00006",
         name: "Pink Pearl Apple",
         image: imageString(),
         description: "Tart apple with bright pink flesh.",

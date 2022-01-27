@@ -1,6 +1,14 @@
 @media (min-width: 576px) {
-    .itemlist-sort {
-        font-size: x-large;
+    .crumbs, .subtitle {
+        font-size: large;
+    }
+
+    .cart-info p {
+        font-size: large;
+    }
+
+    .cart-info button {
+        font-size: large;
     }
 
     button {
@@ -19,12 +27,4 @@
 
 @media (min-width: 1200px) {
     
-}
-
-article {
-    background-color: rgb(242, 242, 242);
-}
-
-.itemlist-body {
-    background-color: lightgray;
 }
