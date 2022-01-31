@@ -1,3 +1,37 @@
 <template>
-    
+    <article class="cart-container slds-card slds-m-vertical_small slds-m-horizontal_x-large">
+        <!-- Header -->
+        <div class="slds-card__header slds-grid">
+            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                <div class="slds-media__body">
+                    <h2 class="cart-header slds-card__header-title">
+                        <!-- Item name -->
+                        <span>Your Cart</span>
+                    </h2>
+                </div>
+            </header>
+        </div>
+        <!-- Body -->
+        <div class="slds-grid slds-grid_verticle">      
+                               
+            <template for:each={cart} for:item="item">
+                <div class="cart-item slds-col" key={randomId}>
+                    <p>{item.name}</p>
+                </div>
+            </template>        
+        </div>
+        <!-- Checkout button -->
+        <div class="slds-card-footer slds-p-around_medium">
+            <button class="slds-button slds-button_neutral">
+                <span class="slds-icon_container slds-icon-utility-cart slds-current-color" title="Shopping cart">
+                    <svg class="slds-icon slds-icon_xx-small" aria-hidden="true">
+                        <use xlink:href="/SLDS/icons/utility-sprite/svg/symbols.svg#cart"></use>
+                    </svg>
+                    <span class="slds-assistive-text">checkout</span>
+                </span>
+                &ensp;
+                Checkout
+            </button>
+        </div>
+    </article>
 </template>

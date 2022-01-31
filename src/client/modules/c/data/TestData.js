@@ -14,7 +14,8 @@ export const items = [
         description: "Tart, crispy baking apple.",
         price: "$1",
         rating: 5,
-        seller: "John Appleseed"
+        seller: "John Appleseed",
+        ordered: 0
     },
     {
         id: 2,
@@ -23,7 +24,8 @@ export const items = [
         description: "Sweet, crispy snacking apple.",
         price: "$1",
         rating: 4,
-        seller: "Grandma Smith"
+        seller: "Grandma Smith",
+        ordered: 0
     },
     {
         id: 3,
@@ -32,7 +34,8 @@ export const items = [
         description: "Tart apple with bright pink flesh.",
         price: "$1",
         rating: 5,
-        seller: "Belle McIntosh"
+        seller: "Belle McIntosh",
+        ordered: 0
     },
     {
         id: 4,
@@ -41,7 +44,8 @@ export const items = [
         description: "Tart, crispy baking apple.",
         price: "$1",
         rating: 5,
-        seller: "John Appleseed"
+        seller: "John Appleseed",
+        ordered: 0
     },
     {
         id: 5,
@@ -50,7 +54,8 @@ export const items = [
         description: "Sweet, crispy snacking apple.",
         price: "$1",
         rating: 4,
-        seller: "Grandma Smith"
+        seller: "Grandma Smith",
+        ordered: 0
     },
     {
         id: 6,
@@ -59,6 +64,7 @@ export const items = [
         description: "Tart apple with bright pink flesh.",
         price: "$1",
         rating: 5,
-        seller: "Belle McIntosh"
+        seller: "Belle McIntosh",
+        ordered: 0
     }
 ]

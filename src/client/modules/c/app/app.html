@@ -9,10 +9,17 @@
     cart-total={cartTotal}
   ></c-header-view>
   <!-- Items List -->
-  <c-item-list
-    items={items}
-    onadd={addItemToCart}
-  ></c-item-list>
+  <template if:true={isShowingCart}>
+    <c-cart
+      cart={cart}
+    ></c-cart>
+  </template>
+  <template if:false={isShowingCart}>
+    <c-item-list
+      items={items}
+      onadd={addItemToCart}
+    ></c-item-list>>
+  </template>
   <!-- Footer -->
   
 </template>

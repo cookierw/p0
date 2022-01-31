@@ -6,7 +6,6 @@ export default class ItemList extends LightningElement {
     categories = ["Apples", "Oranges"];
 
     addItemToCart(e) {
-        let detail = e.detail;
-        this.dispatchEvent(new CustomEvent('add', { detail }));
+        this.dispatchEvent(new CustomEvent('add', { detail: e.detail }));
     }
 }
