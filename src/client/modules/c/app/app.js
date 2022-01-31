@@ -21,10 +21,11 @@ export default class App extends LightningElement {
         return this.cart.length * 1;
     }
     addItemToCart(e) { 
-        console.log("Item added to cart");
-        this.cart.push(this.items[e.detail - 1]);
+        // Event passes item obj up the hierarchy
+        // Should use something other than id to make system more robust
+        this.cart.push(this.items[e.detail.id - 1]);
     }
-
+ 
     clearCart() { 
         this.cart = []; 
     }

@@ -15,6 +15,6 @@ export default class Cart extends LightningElement {
     }
 
     get randomId() {
-        return Math.floor(Math.random() * 1000);
+        return Math.random() * 100000;
     }
 }

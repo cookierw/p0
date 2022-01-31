@@ -12,11 +12,18 @@
             </header>
         </div>
         <!-- Body -->
-        <div class="slds-grid slds-grid_verticle">      
-                               
+        <div class="slds-p-vertical_small slds-p-horizontal_large">
             <template for:each={cart} for:item="item">
-                <div class="cart-item slds-col" key={randomId}>
-                    <p>{item.name}</p>
+                <div class="cart-item slds-grid slds-gutters" key={randomId}>
+                    <div class="slds-col slds-size_2-of-3">
+                        <h1 class="item-name">{item.name}</h1>
+                    </div>
+                    <div class="slds-col slds-size_1-of-6">
+                        <h1 class="item-price">{item.price}</h1>
+                    </div>
+                    <div class="slds-col slds-size_1-of-6">
+                        <h1 class="item-amount">{item.ordered}</h1>
+                    </div>
                 </div>
             </template>        
         </div>
