@@ -3,10 +3,15 @@ import { items as testItems } from "../data/TestData"
 
 export default class App extends LightningElement {
 
-    items = testItems;
-    @track cart = [];
+    items;
+    @track cart;
     isShowingCart = false;
     userIcon = "/SLDS/icons/standard-sprite/svg/symbols.svg#avatar";
+
+    connectedCallback() {
+        this.items = testItems;
+        this.cart = [];
+    }
     
     // cart
     get cartCount() { 
@@ -16,9 +21,11 @@ export default class App extends LightningElement {
         return this.cart.length * 1;
     }
     addItemToCart(e) { 
-        this.cart.push(this.items[e.detail - 1]);
+        // Event passes item obj up the hierarchy
+        // Should use something other than id to make system more robust
+        this.cart.push(this.items[e.detail.id - 1]);
     }
-
+ 
     clearCart() { 
         this.cart = []; 
     }
