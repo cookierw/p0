@@ -23,7 +23,16 @@ export default class App extends LightningElement {
     addItemToCart(e) { 
         // Event passes item obj up the hierarchy
         // Should use something other than id to make system more robust
-        this.cart.push(this.items[e.detail.id - 1]);
+        let item = {...e.detail};
+        let i = this.cart.findIndex(elem => elem.id === item.id);
+
+        if (i >= 0) {
+            item.ordered++;
+            this.cart[i] = item;
+        } else {
+            item.ordered = 1;
+            this.cart.push(item);
+        }
     }
  
     clearCart() { 
