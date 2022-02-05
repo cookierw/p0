@@ -41,7 +41,7 @@ export default class App extends LightningElement {
 
     // header
     // When user clicks the cart button
-    handleShowItems() { this.isShowingCart = true; }
+    handleShowCart() { this.isShowingCart = true; }
 
     // itemsList
     // When the user navigates back from the cart
