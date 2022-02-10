@@ -1,12 +1,5 @@
 @media (min-width: 576px) {
-    .itemlist-sort {
-        font-size: x-large;
-    }
-
-    button {
-        padding-top: 0.2rem;
-        padding-bottom: 0.2rem;
-    }
+    
 }
 
 @media (min-width: 768px) {
@@ -21,10 +14,12 @@
     
 }
 
-article {
-    background-color: rgb(242, 242, 242);
+* {
+    color: #352626;
 }
 
-.itemlist-body {
+.list-body {
     background-color: lightgray;
+    display: flex;
+    flex-wrap: wrap;
 }

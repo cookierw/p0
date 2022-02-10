@@ -1,16 +1,12 @@
-function rand() {
-    return (Math.floor(Math.random() * 3) + 1);
-}
-
-function imageString() {
-    return `/SLDS/images/product${rand()}.jpg`;
+function imageString(name) {
+    return `/resources/apples/${name}.jpeg`;
 }
 
 export const items = [
     {
         id: 1,
         name: "Gravenstein Apple",
-        image: imageString(),
+        image: imageString("gravenstein"),
         description: "Tart, crispy baking apple.",
         price: "$1",
         rating: 5,
@@ -20,8 +16,8 @@ export const items = [
     {
         id: 2,
         name: "Fuji Apple",
-        image: imageString(),
-        description: "Sweet, crispy snacking apple.",
+        image: imageString("fuji"),
+        description: "Sweet snacking apple.",
         price: "$1",
         rating: 4,
         seller: "Grandma Smith",
@@ -30,8 +26,8 @@ export const items = [
     {
         id: 3,
         name: "Pink Pearl Apple",
-        image: imageString(),
-        description: "Tart apple with bright pink flesh.",
+        image: imageString("pink-pearl"),
+        description: "Tart apple with pink flesh.",
         price: "$1",
         rating: 5,
         seller: "Belle McIntosh",
@@ -40,7 +36,7 @@ export const items = [
     {
         id: 4,
         name: "Gravenstein Apple",
-        image: imageString(),
+        image: imageString("gravenstein"),
         description: "Tart, crispy baking apple.",
         price: "$1",
         rating: 5,
@@ -50,8 +46,8 @@ export const items = [
     {
         id: 5,
         name: "Fuji Apple",
-        image: imageString(),
-        description: "Sweet, crispy snacking apple.",
+        image: imageString("fuji"),
+        description: "Sweet snacking apple.",
         price: "$1",
         rating: 4,
         seller: "Grandma Smith",
@@ -60,8 +56,8 @@ export const items = [
     {
         id: 6,
         name: "Pink Pearl Apple",
-        image: imageString(),
-        description: "Tart apple with bright pink flesh.",
+        image: imageString("pink-pearl"),
+        description: "Tart apple with pink flesh.",
         price: "$1",
         rating: 5,
         seller: "Belle McIntosh",

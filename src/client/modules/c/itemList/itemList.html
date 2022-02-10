@@ -1,32 +1,12 @@
 <template>
-    <article class="slds-card slds-m-around_medium">
-        <div class="header slds-card__header slds-grid">
-            <header class="slds-media slds-media_center slds-has-flexi-truncate">
-                <div class="slds-media__figure">
-                    <span class="slds-icon_container slds-icon-custom-custom51" title="items">
-                        <svg class="slds-icon slds-icon_large" aria-hidden="true">
-                            <use xlink:href="/SLDS/icons/custom-sprite/svg/symbols.svg#custom51"></use>
-                        </svg>
-                        <span class="slds-assistive-text">items</span>
-                    </span>
-                </div>
-                <div class="slds-media__body">
-                    <h2 class="slds-card__header-title">
-                        <span class="slds-text-heading_large">Items</span>
-                    </h2>
-                </div>
-                <div class="slds-no-flex">
-                    <button class="itemlist-sort slds-button slds-button_neutral">Sort</button>
-                </div>
-            </header>
-        </div>
+    <div class="list-container">
         <!-- Items -->
-        <div class="itemlist-body slds-card__body slds-card__body_inner slds-grid slds-wrap">
+        <div class="list-body">
             <template for:each={items} for:item="item">
-                <div class="itemlist-item slds-col" key={item.id}>
+                <div class="item" key={item.id}>
                     <c-item onadd={addItemToCart} item={item}></c-item>
                 </div>
             </template>
         </div>
-    </article>
+    </div>
 </template>

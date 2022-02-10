@@ -1,44 +1,37 @@
 <template>
-    <article class="item slds-card slds-m-around_small">
+    <article class="item-container slds-card">
         <!-- Card header -->
-        <div class="slds-card__header slds-grid">
-            <header class="slds-media slds-media_center slds-has-flexi-truncate">
-                <div class="slds-media__body">
-                    <h2 class="item-header slds-card__header-title">
-                        <!-- Item name -->
-                        <span>{item.name}</span>
-                    </h2>
-                </div>
-            </header>
-            <div class="slds-no-flex">
-                <button 
-                    class="itemlist-sort slds-button slds-button_neutral"
-                    onclick={addItemToCart}
-                >   Add
-                </button>
-            </div>
-        </div>
-        <div class="slds-card__body slds-card__body_inner slds-grid">
+        <header>
+            <h2 class="item-header">
+                <!-- Item name -->
+                <span>{item.name}</span>
+            </h2>
+            <button 
+                class="add-btn slds-button slds-button_neutral"
+                onclick={addItemToCart}
+            >   
+                Add
+            </button>
+        </header>
+        <div class="body">
             <!-- Card Body -->
-            <div class="slds-col">
-                <div class="item-image slds-p-bottom_small">
-                    <img src={item.image} alt="Item image" />
+            <div class="item-image slds-p-bottom_small">
+                <img src={item.image} alt="Item image" />
+            </div>
+            <div class="item-info">
+                <div class="item-price">
+                    <p>{item.price}</p>
                 </div>
-                <div class="item-info slds-p-bottom_small slds-grid slds-grid_align-space">
-                    <div class="item-price slds-col">
-                        <p>{item.price}</p>
-                    </div>
-                    <div class="item-rating slds-col">
-                        <p>{item.rating} Stars!</p>
-                    </div>
-                    <div class="item-seller slds-col slds-size_1-of-2">
-                        <p>{item.seller}</p>
-                    </div>
+                <div class="item-rating">
+                    <p>{item.rating} Stars!</p>
                 </div>
-                <div class="item-description slds-p-bottom_small">
-                    <p>Description:</p>
-                    <h2>{item.description}</h2>
+                <div class="item-seller">
+                    <p>{item.seller}</p>
                 </div>
+            </div>
+            <div class="item-description">
+                <p>Description:</p>
+                <h2>{item.description}</h2>
             </div>
         </div>
     </article>

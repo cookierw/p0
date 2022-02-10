@@ -1,8 +1,13 @@
 @media (min-width: 576px) {
-    .item {
-        width: 40vw;
+    img {
+        height: 12rem;
+        width: 12rem;
     }
-    
+
+    header h2 {
+        width: 69%;
+    }
+
     h2 {
         font-size: large;
     }
@@ -13,6 +18,11 @@
 }
 
 @media (min-width: 768px) {
+    img {
+        height: 20rem;
+        width: 20rem;
+    }
+
     h2 {
         font-size: x-large;
     }
@@ -27,10 +37,8 @@
 }
 
 @media (min-width: 1200px) {
-    .item {
-        width: 30vw;
-    }
     
+
     h2 {
         font-size: large;
     }
@@ -40,7 +48,30 @@
     }
 }
 
-p {
+.item-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+}
+
+button {
+    margin-left: auto;
+}
+
+img {
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.item-header {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

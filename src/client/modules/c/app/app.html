@@ -12,13 +12,15 @@
   <template if:true={isShowingCart}>
     <c-cart
       cart={cart}
+      cart-count={cartCount}
+      cart-total={cartTotal}
     ></c-cart>
   </template>
   <template if:false={isShowingCart}>
     <c-item-list
       items={items}
       onadd={addItemToCart}
-    ></c-item-list>>
+    ></c-item-list>
   </template>
   <!-- Footer -->
   
